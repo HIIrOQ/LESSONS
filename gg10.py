@@ -17,22 +17,22 @@
 
  
 
-def in_num(n):
-    def decorator(func):
-        def wrapper(*args,**kwargs):
-            for _ in range(n):
-                result = func(*args,**kwargs)
-            return result
-        return wrapper
-    return decorator
+# def in_num(n):
+#     def decorator(func):
+#         def wrapper(*args,**kwargs):
+#             for _ in range(n):
+#                 result = func(*args,**kwargs)
+#             return result
+#         return wrapper
+#     return decorator
 
 
-@in_num(10)
-def hello (name):
-    print('hello ',name)
+# @in_num(10)
+# def hello (name):
+#     print('hello ',name)
     
     
-hello('dany')
+# hello('dany')
 
 # @classmethod
 # @property
